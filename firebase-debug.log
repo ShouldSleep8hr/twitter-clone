@@ -1,0 +1,43 @@
+[debug] [2023-09-15T05:24:02.017Z] ----------------------------------------------------------------------
+[debug] [2023-09-15T05:24:02.020Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pearraya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-15T05:24:02.020Z] CLI Version:   12.5.4
+[debug] [2023-09-15T05:24:02.020Z] Platform:      win32
+[debug] [2023-09-15T05:24:02.021Z] Node Version:  v16.17.0
+[debug] [2023-09-15T05:24:02.021Z] Time:          Fri Sep 15 2023 12:24:02 GMT+0700 (เวลาอินโดจีน)
+[debug] [2023-09-15T05:24:02.022Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-15T05:24:02.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-15T05:24:02.123Z] > authorizing via signed-in user (pearanuban@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\project\twitter-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-15T05:24:07.532Z] Using project from CLI flag: twitter-clone-1faac
+[debug] [2023-09-15T05:24:07.534Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-1faac [none]
+[debug] [2023-09-15T05:24:08.219Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-1faac 403
+[debug] [2023-09-15T05:24:08.219Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/twitter-clone-1faac {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-09-15T05:24:08.220Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-09-15T05:24:08.451Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\pearraya\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\pearraya\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project twitter-clone-1faac. Please make sure the project exists and your account has permission to access it.
