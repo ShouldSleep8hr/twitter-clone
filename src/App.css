@@ -1,5 +1,5 @@
 body {
-  --twitter-color: #50b7f5;
+  --twitter-color: #121212;
   --twitter-background: #e6ecf0;
 }
 
@@ -10,4 +10,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    --twitter-color: #121212;
+    --twitter-background: #e6ecf0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --twitter-color: #f7f9fa;
+    --twitter-background: #000000;
+  }
 }
