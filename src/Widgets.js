@@ -12,11 +12,11 @@ function Widgets() {
     <div className="widgets">
       <div className="widgets__input">
         <SearchIcon className="widgets__searchIcon" />
-        <input placeholder="Search Twitter" type="text" />
+        <input placeholder="ค้นหา" type="text" />
       </div>
 
       <div className="widgets__widgetContainer">
-        <h2>What's happening</h2>
+        <h2>ความนิยมสำหรับคุณ</h2>
 
         <TwitterTweetEmbed tweetId={"858551177860055040"} />
 

@@ -22,8 +22,20 @@
 }
 
 .tweetBox__imageInput {
-  border: none;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+.tweetBox__imageInput > input {
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .tweetBox__tweetButton {
@@ -37,4 +49,31 @@
   height: 40px !important;
   margin-top: 20px !important;
   margin-left: auto !important;
+}
+
+.tweetBox__imagePreview {
+  position: relative;
+  /*padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  padding-top: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+.tweetBox__imagePreview > img {
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+  max-height: 100%; /* Ensure the image doesn't exceed the height of the container */
+  object-fit: cover; /* Crop and cover the entire container */
+}
+
+.tweetBox__deleteButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
